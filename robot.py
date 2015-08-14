@@ -41,3 +41,9 @@ def reverse(i):
 	time.sleep(i)
 	GPIO.output(revleft, False)
 	GPIO.output(revright, False)
+
+try:
+	print("R E A D Y")
+except KeyboardInterrupt:
+	print("E X I T")
+	GPIO.cleanup()
